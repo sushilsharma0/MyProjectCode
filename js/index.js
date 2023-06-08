@@ -5,7 +5,6 @@ const host="127.0.0.1";
 const path=require('path');
 const hbs=require('hbs');
 const pug=require('pug');
-const html=require('html')
 const newmodel=require("./mongodb")
 
 app.use(express.static('../public'));
@@ -36,7 +35,7 @@ app.post("/sign-up",async(req,res)=>{
         firstname:req.body.firstname,
         middlename:req.body.middlename,
         lastname:req.body.lastname,
-        email:req.body.signemail,
+        email:req.body.email,
         gender:req.body.gender,
         phonenumber:req.body.phonenumber,
         password:req.body.password,
