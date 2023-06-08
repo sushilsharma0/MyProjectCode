@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+}
+body{
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    height: 150vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.main-container{
+    /* background-color: rgb(17, 43, 67); */
+    width: 50%;
+    height: fit-content;
+    position: relative;
+    top: 190px;
+}
+h1{
+    color: white;
+    text-align: center;
+    border-bottom: 5px solid black;
+    padding: 10px;
+    font-size: 4rem;
+}
+form{
+    margin-top: 45px;
+}
+form i{
+    margin: 0 10px 0 10px;
+    font-size: 30px;
+    filter: invert(1);
+}
+.user{
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 85%;
+    outline: none;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+.user::placeholder{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.user:hover::placeholder{
+    visibility: hidden;
+}
+.text-gen{
+    font-size: 2rem;
+    color: white;
+}
+.gen-input{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+input[type="radio"]{
+    width: 20px;
+}
+.gen{
+    font-size: 2rem;
+    color: white;
+    padding-right: 60px;
+}
+input[type="text"][value="+977"]{
+    background: none;
+    color: white;
+    border: none;
+    width: 60px;
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    position: relative;
+    top: 11px;
+}
+input[type="tel"]{
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 75%;
+    outline: none;
+    padding: 15px;
+    margin-bottom: 50px;   
+}
+input[type="tel"]::placeholder{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+input[type="tel"]:hover::placeholder{
+ visibility: hidden;   
+}
+input[type="password"]{
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 85%;
+    outline: none;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+input[type="password"]::placeholder{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+input[type="password"]:hover::placeholder{
+    visibility: hidden;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 20px;
+    padding: 5px 30px;
+    font-size: 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.already{
+    font-size: 1.5rem;
+    color: white;
+}
+.links a{
+    text-decoration: none;
+    color: rgb(206, 27, 27);
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 5px;
+}
+    input[type=checkbox] {
+        margin: 14px 6px 0;
+        line-height: normal;
+        width: 20px;
+        height: 20px;
+        }
+
+#check-text{
+    font-size: 1.5rem;
+    color: white;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <script src="https://kit.fontawesome.com/bdc8eb54fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-container">
+            <h1>SignUp</h1>
+            <form action="/sign-up" method="post">
+                <i class="fa fa-user"></i>
+                <input class="user" type="text" name="firstname" id="first-name" placeholder="Enter your First Name"
+                    autocomplete="off"><br>
+                <i class="fa fa-user"></i>
+                <input class="user" type="text" name="middlename" id="middle-name" placeholder="Enter your Middle Name"
+                    autocomplete="off"><br>
+                <i class="fa fa-user"></i>
+                <input class="user" type="text" name="lastname" id="last-name" placeholder="Enter your Last Name"
+                    autocomplete="off"><br>
+                <i class="fa fa-envelope"></i>
+                <input class="user" type="email" name="email" id="email" placeholder="Enter your Email"
+                    autocomplete="off" required><br>
+                <div class="gen-input">
+                    <span class="text-gen">Gender:</span>
+                    <input class="gender-div" type="radio" name="gender" required><span class="gen">Male</span>
+                    <input class="gender-div" type="radio" name="gender" required><span class="gen">Female</span>
+                    <input class="gender-div" type="radio" name="gender" required><span class="gen">Others</span>
+                </div><br>
+                <i class="fa fa-phone"></i>
+                <input type="text" value="+977" disabled>
+                <input type="tel" name="phonenumber" id="phone-number" placeholder="Enter your phone number"
+                    autocomplete="off" required><br>
+                <i class="fa fa-key"></i>
+                <input type="password" name="password" id="password" placeholder="Choose your Password" required>
+                <i class="fa fa-key"></i>
+                <input type="password" name="password" id="cpassword" placeholder="Re-type your Password" required>
+                <div class="btn">
+                    <button type="submit">Sign Up</button>
+                </div>
+                <div class="links">  
+                    <div>
+                    <span class="already">Already have an account ?</span><a href="/views/login.html">log in</a></div> 
+                    <div>
+                    <input type="checkbox"><span id="check-text">Accepts terms and conditions</span></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

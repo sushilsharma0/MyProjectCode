@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+}
+body{
+    background: url('../img/bg-1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+.form-container{
+    color: white;
+    width: 50%;
+    border-radius: 20px;
+}
+.heading{
+    text-align: center;
+    border-bottom: 5px solid black;
+    padding: 10px;
+    font-size: 4rem;
+}
+form i{
+    margin: 0 10px 0 10px;
+    font-size: 30px;
+}
+form input{
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 85%;
+    margin: 70px 0px 0px 0;
+    outline: none;
+    padding: 15px;
+}
+
+form input::placeholder{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+form input:hover::placeholder{
+    visibility: hidden;
+}
+.btn{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 20px;
+    padding: 5px 30px;
+    font-size: 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.links a:hover{
+    color: rgb(125, 125, 232);
+}

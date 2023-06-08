@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <script src="https://kit.fontawesome.com/bdc8eb54fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/views/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="heading">log in</h1>
+            <form action="/login-form" method="post">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" autocomplete="off"
+                    required><br>
+                <i class="fa fa-key"></i>
+                <input type="password" name="password" id="password" placeholder="Enter your Password"
+                    autocomplete="off" required><br>
+                <div class="btn">
+                    <button type="submit">log in</button><br>
+                </div>
+                <div class="links">
+                    <a href="/">forget password ?</a>
+                    <a href="/views/signup.hbs">sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
