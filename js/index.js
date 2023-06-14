@@ -31,17 +31,14 @@ app.post("/login-form",async(req,res)=>{
     res.render("home")
 })
 app.post("/sign-up",async(req,res)=>{
-    const data={
-        firstname:req.body.firstname,
-        middlename:req.body.middlename,
-        lastname:req.body.lastname,
-        email:req.body.email,
-        gender:req.body.gender,
-        phonenumber:req.body.phonenumber,
-        password:req.body.password,
-        password:req.body.password,
-    }
-    await newmodel.insertMany([data])
+    const data=new newmodel(req.body);
+
+
+    await newmodel.save().then(()=>{
+        console.log("successfully saved")
+    }).catch(()=>{
+        console.log("unsuccessfully aaved ")
+    })
     res.render("home")
 })
 
